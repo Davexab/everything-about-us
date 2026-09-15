@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="hearts"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="title">Our Love Story</h1>
+            <p class="subtitle">Setiap detik bersamamu adalah anugerah ✨</p>
+            <div class="heart-divider">❤</div>
+            <button class="btn-love" onclick="scrollToStory()">Cerita Kita 💌</button>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+<section class="countdown-section">
+    <h2>Kita Bersama Sejak 9 Februari 2022 💕</h2>
+    <p class="romantic-text" id="romanticText"></p>
+    <div class="countdown" id="countdown">
+        <div class="time-box"><span id="days">0</span><p>Total Hari</p></div>
+        <div class="time-box"><span id="hours">0</span><p>Total Jam</p></div>
+        <div class="time-box"><span id="minutes">0</span><p>Total Menit</p></div>
+        <div class="time-box"><span id="seconds">0</span><p>Total Detik</p></div>
+    </div>
+</section>
+
+<!-- Anniversary Countdown Section -->
+<section class="anniversary-section">
+    <h2 id="annivTitle">Anniversary Berikutnya 🎂</h2>
+    <p class="romantic-text" id="annivDate"></p>
+    <div class="countdown" id="annivCountdown">
+        <div class="time-box"><span id="annivDays">0</span><p>Hari</p></div>
+        <div class="time-box"><span id="annivHours">0</span><p>Jam</p></div>
+        <div class="time-box"><span id="annivMinutes">0</span><p>Menit</p></div>
+        <div class="time-box"><span id="annivSeconds">0</span><p>Detik</p></div>
+    </div>
+    <p class="anniv-message" id="annivMessage"></p>
+</section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section">
+        <h2> Our Special Moment 📸</h2>
+        <p class="gallery-sub">Our Memories that i can't forget</p>
+        <div class="gallery">
+            <div class="photo-card">
+    <div class="gallery">
+    <div class="photo-card">
+        <img src="images/foto1.jpg" alt="Momen 1">
+        <p>First Date 💕</p>
+    </div>
+    <div class="photo-card">
+        <img src="images/foto2.jpeg" alt="Momen 2">
+        <p>Favorite 🌸</p>
+    </div>
+    <div class="photo-card">
+        <img src="images/foto3.jpeg" alt="Momen 3">
+        <p>Anniversary 🎉</p>
+    </div>
+    <div class="photo-card">
+        <img src="images/foto4.jpeg" alt="Momen 4">
+        <p>Together ❤</p>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+        </div>
+        
+    </section>
+
+    <!-- Love Letter -->
+    <section class="letter-section">
+        <h2> Love Letter for Princess Bubble </h2>
+        <div class="letter">
+            <p class="letter-text" id="letterText"></p>
+        </div>
+        <button class="btn-love" onclick="showSurprise()">Klik Aku 💝</button>
+    </section>
+
+    <!-- Music Player -->
+    <section class="music-section">
+        <h2>Favorite Song 🎵</h2>
+        <div class="music-player">
+            <button class="play-btn" id="playBtn" onclick="toggleMusic()">▶</button>
+            <div class="music-info">
+                <p class="song-title">A Thousand Years - Christina Peri</p>
+                <p class="song-desc">Favorite song that reminds me of you</p>
+            </div>
+            <audio id="bgMusic" loop>
+    <source src="music/thousand years.mp3" type="audio/mpeg">
+</audio>
+        </div>
+       
+
+    <!-- Footer -->
+    <footer>
+        <p>For a girl that i love with all of my hearts ❤</p>
+        <p class="footer-name">You & Me, Forever</p>
+    </footer>
+
+    <!-- Popup Surprise -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Aku Sayang Kamu! 💖</h2>
+            <p>Terima kasih sudah menjadi bagian terindah dalam hidupku. I love you more than words can say! 🌹</p>
+            <button onclick="closePopup()">Tutup 💕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
